@@ -4,10 +4,6 @@ import { ThresholdType } from "./value/ThresholdType";
 import { ThresholdValue } from "./value/ThresholdValue";
 import { ThresholdId } from "./value/ThresholdId";
 
-/**
- * Threshold Entity - Aggregate Root
- * Represents a threshold configuration with unique identity
- */
 export class Threshold {
   private constructor(
     private readonly _id: ThresholdId,
@@ -100,7 +96,6 @@ export class Threshold {
     );
   }
 
-  // Getters - defensive copies for dates
   get id(): ThresholdId {
     return this._id;
   }

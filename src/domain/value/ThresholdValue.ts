@@ -1,9 +1,5 @@
 import { InvalidThresholdValueError } from "../errors";
 
-/**
- * ThresholdValue - Simple value object for threshold values
- * Enforces business rules: positive numbers only
- */
 export class ThresholdValue {
   private constructor(private readonly _value: number) {}
 
@@ -25,7 +21,6 @@ export class ThresholdValue {
     return this._value === other._value;
   }
 
-  // Comparison methods - keep simple
   isGreaterThan(other: ThresholdValue): boolean {
     return this._value > other._value;
   }
@@ -42,7 +37,6 @@ export class ThresholdValue {
     return this._value <= other._value;
   }
 
-  // Serialization methods
   toString(): string {
     return this._value.toString();
   }

@@ -2,9 +2,7 @@ import { validate, v4 as uuid } from "uuid";
 import { DomainError } from "../errors";
 
 export class ThresholdId {
-  private constructor(private readonly _value: string) {
-    Object.freeze(this);
-  }
+  private constructor(private readonly _value: string) {}
 
   static generate(): ThresholdId {
     return new ThresholdId(uuid());
