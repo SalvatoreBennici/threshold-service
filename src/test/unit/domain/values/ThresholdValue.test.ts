@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { ThresholdValue } from "../../../../src/domain/value/ThresholdValue";
-import { InvalidThresholdValueError } from "../../../../src/domain/errors";
+import { ThresholdValue } from "@domain/value/ThresholdValue";
+import { InvalidThresholdValueError } from "@domain/errors";
 
 describe("ThresholdValue", () => {
   it("should create valid positive values", () => {

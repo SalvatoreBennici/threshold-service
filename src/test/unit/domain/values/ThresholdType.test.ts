@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { ThresholdType } from "../../../../src/domain/value/ThresholdType";
+import { ThresholdType } from "@domain/value/ThresholdType";
 
 describe("ThresholdType", () => {
   it("should have correct enum values", () => {

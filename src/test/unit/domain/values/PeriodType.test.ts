@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { PeriodType } from "../../../../src/domain/value/PeriodType";
+import { PeriodType } from "@domain/value/PeriodType";
 
 describe("PeriodType", () => {
   it("should have correct enum values", () => {

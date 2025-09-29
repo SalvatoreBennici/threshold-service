@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { validate } from "uuid";
-import { ThresholdId } from "../../../../src/domain/value/ThresholdId";
-import { DomainError } from "../../../../src/domain/errors";
+import { ThresholdId } from "@domain/value/ThresholdId";
+import { DomainError } from "@domain/errors";
 
 describe("ThresholdId", () => {
   const validUuid = "123e4567-e89b-12d3-a456-426614174000";

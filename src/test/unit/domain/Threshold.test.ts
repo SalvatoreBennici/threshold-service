@@ -1,9 +1,9 @@
 import { describe, it, expect, vi } from "vitest";
-import { Threshold } from "../../../src/domain/Threshold";
-import { ResourceType } from "../../../src/domain/value/ResourceType";
-import { PeriodType } from "../../../src/domain/value/PeriodType";
-import { ThresholdType } from "../../../src/domain/value/ThresholdType";
-import { InvalidThresholdValueError } from "../../../src/domain/errors";
+import { Threshold } from "@domain/Threshold";
+import { ResourceType } from "@domain/value/ResourceType";
+import { PeriodType } from "@domain/value/PeriodType";
+import { ThresholdType } from "@domain/value/ThresholdType";
+import { InvalidThresholdValueError } from "@domain/errors";
 
 vi.stubGlobal("crypto", { randomUUID: () => "mock-uuid" });
 

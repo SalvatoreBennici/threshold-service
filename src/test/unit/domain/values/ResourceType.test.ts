@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { ResourceType } from "../../../../src/domain/value/ResourceType";
+import { ResourceType } from "@domain/value/ResourceType";
 
 describe("ResourceType", () => {
   it("should have correct enum values", () => {
